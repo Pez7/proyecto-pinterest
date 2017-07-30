@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pinterest</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Pinterest</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/style.min.css">
+
 </head>
 <body>
-
-  <nav>
-    <div class="nav-wrapper">
-      <form>
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
-    </div>
-  </nav>
+	<nav>
+		<div class="nav-wrapper">
+			<form>
+				<div class="input-field">
+					<i class="material-icons prefix">search</i>
+					<input id="icon_prefix" type="text" class="validate">
+					<label for="icon_prefix"></label>
+				</div>
+			</form>
+		</div>
+	</nav>
+	<section id="contenedor" class="contenedor">
+	</section>
+	<script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+	<script src="dist/js/data.json"></script>
 	<script src="dist/js/script.js"></script>
 </body>
 </html>
