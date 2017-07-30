@@ -10,21 +10,25 @@
 
 </head>
 <body>
+  <div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
 			<div>
 				<img src="assets/img/logo.png" alt="">
 				<a href=""> Inicio</a>
 			</div>
-			<form>
-				<div class="input-field">
-					<input id="search" type="search" required placeholder="Buscar">
-					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
-				</div>
-			</form>
+			<div class="input-group margin-bottom-sm">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+				<input class="control form-control" type="text" placeholder="Buscar">
+				<span class="input-group-addon"><i class="fa fa-times" aria-hidden="true"></i></span>
+			</div>
+			<div>
+				<a id="pines" href="#">Todos los pines<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</nav>
-	<section id="contenedor" class="contenedor">
+</div>
+	<section id="contenedor" class="container-fluid contenedor">
 	</section>
   <!-- Modal Trigger -->
   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
