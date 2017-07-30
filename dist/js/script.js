@@ -20275,15 +20275,10 @@ $(document).ready(function(){
 										'<div class="caja">'+
 											'<h6>'+ele.title+'</h6>'+
 											'<p>'+ele.description+'</p>'+
-											'<h5>'+ele.username+' #'+ele.hashtag+'</h5>'+
+											'<h5><i class="fa fa-puzzle-piece"></i>'+' '+ele.username+' #'+ele.hashtag+'</h5>'+
 										'</div>'+
 									'</div>'+
 								'</div>');
 	});
 
-/*	$('#contenedor').masonry({
-		itemSelector: '.elemento',
-		columnWidth: 200,
-		horizontalOrder: true
-	});*/
 });
