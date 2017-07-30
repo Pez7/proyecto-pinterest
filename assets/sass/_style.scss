@@ -3,13 +3,80 @@ html {
   line-height: 1.25;
 
 }
-
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+nav{
+	position:fixed;
+    color: #e9e9e9;
+
+	div{
+		div{
+			display:inline;
+			margin-left:42px;
+			img{
+				width:30px;
+				height:30px;
+			}
+			a{}
+		}
+		form{
+    width: 50%;
+    margin-top: -67px;
+    margin-left: 125px;
+    background-color:#e9e9e9e;
+			div{
+
+				input{}
+				label{
+
+				}
+			}
+		}
+	}
+}
+nav .nav-wrapper .input-field input[type=search] {
+    height: 43px;
+    margin-left: 9px;
+    margin-top: 11px;
+    padding-left: 3rem;
+    width: calc(100% - 4rem);
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #e9e9e9;
+    color: #515151;
+}
+input:not([type]):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: none;
+    -webkit-box-shadow: 0 1px 0 0 #26a69a;
+    box-shadow: none;
+    background-color: #e9e9e9;
+    color: #515151;
+}
+
+nav .input-field label.active i {
+    color: #515151;
+    margin-top: -85px;
+    margin-left: 8px;
+}
+
 #contenedor {
 	max-width: calc(5 * 16rem);
 	min-width: 25em;

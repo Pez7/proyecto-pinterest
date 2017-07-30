@@ -20271,7 +20271,7 @@ $(document).ready(function(){
 	photo.forEach(function(ele){
 		$('#contenedor').append('<div class="elemento">'+
 									'<div class="box">'+
-										'<img src="assets/img/'+ele.image_url+'" alt="">'+
+										'<img class="modal-trigger" src="assets/img/'+ele.image_url+'" alt="">'+
 										'<div class="caja">'+
 											'<h6>'+ele.title+'</h6>'+
 											'<p>'+ele.description+'</p>'+
@@ -20280,6 +20280,21 @@ $(document).ready(function(){
 									'</div>'+
 								'</div>');
 	});
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
+
+	$('.modal-content').append('<h1>HolaPeyita!</h1>');
+
+
+
+
+
+
+$('.modal').modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+    }
+  );
 });
