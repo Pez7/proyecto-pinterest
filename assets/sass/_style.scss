@@ -1,36 +1,79 @@
-*{
-	margin:0;
-	padding:0;
+html {
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: #e9e9e9;
 }
+
 * {
-	margin:0;
-	padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- 
-body {
-	background:#e9e9e9;
-}
- 
-.contenedor {
-	width:90%;
-	margin:15px auto;
-}
- 
-.elemento {
-	width:220px;
-	background:#fff;
-	float:left;
-	margin-right:15px;
-	margin-bottom:15px;
-	box-shadow:0 1px 2px 0 rgba(0,0,0,0.22);
-	img{
-		width:100%;
-	}
-	div{
-		h3{}
-		p{
-			padding:10px;
-			font-size:13px;
+#contenedor {
+	max-width: calc(5 * 16rem);
+	min-width: 25em;
+	margin: 0 auto;
+	.elemento {
+		padding: 0;
+		border: 1px solid #d9d9d9;
+		border-radius: 7%;
+		overflow: hidden;
+		background-color: white;
+		margin: .5em;
+		.box{
+			img {
+				width: 100%;
+				border-radius:7%;
+			}
+			.caja{
+				h6 {
+					font-size: 20px;
+					font-weight: bold;
+				}
+				p{
+					font-size:10px;
+				}
+			}
 		}
 	}
+}
+
+
+
+
+/* FLEXBOX */
+
+#contenedor {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+
+.elemento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 calc(50% - 1em);
+}
+
+@media screen and ( min-width:30em) {
+  .elemento {
+    flex: 0 1 calc(33% - 1em);
+  }
+}
+
+@media screen and ( min-width:48em) {
+  .elemento {
+    flex: 0 1 calc(25% - 1em);
+  }
+}
+
+@media screen and ( min-width:62em) {
+  .elemento {
+    flex: 0 1 calc(20% - 1em);
+  }
+  h1 {
+    font-size: 2em;
+  }
 }

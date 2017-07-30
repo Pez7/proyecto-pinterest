@@ -15,19 +15,15 @@ var photo = [
 $(document).ready(function(){
 	photo.forEach(function(ele){
 		$('#contenedor').append('<div class="elemento">'+
-									'<img src="assets/img/'+ele.image_url+'" alt="">'+
-									'<div>'+
-										'<h3>'+ele.title+'</h3>'+
-										'<p>'+ele.description+'</p>'+
-										'<h5>'+ele.user+' #'+ele.hashtag+'</h5>'+
+									'<div class="box">'+
+										'<img src="assets/img/'+ele.image_url+'" alt="">'+
+										'<div class="caja">'+
+											'<h6>'+ele.title+'</h6>'+
+											'<p>'+ele.description+'</p>'+
+											'<h5>'+ele.username+' #'+ele.hashtag+'</h5>'+
+										'</div>'+
 									'</div>'+
 								'</div>');
 	});
 
-		var container = document.querySelector('.contenedor');
-		var msnry = new Masonry( container, {
-		  // options
-		  itemSelector: '.elemento'
-		  horizontalOrder: true
-		});
 });
