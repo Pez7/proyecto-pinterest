@@ -14,7 +14,7 @@ var photo = [
 
 $(document).ready(function(){
 	photo.forEach(function(ele){
-		$('#contenedor').append('<div>'+
+		$('#contenedor').append('<div class="elemento">'+
 									'<img src="assets/img/'+ele.image_url+'" alt="">'+
 									'<div>'+
 										'<h3>'+ele.title+'</h3>'+
@@ -23,4 +23,11 @@ $(document).ready(function(){
 									'</div>'+
 								'</div>');
 	});
+
+		var container = document.querySelector('.contenedor');
+		var msnry = new Masonry( container, {
+		  // options
+		  itemSelector: '.elemento'
+		  horizontalOrder: true
+		});
 });
