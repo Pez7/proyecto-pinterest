@@ -26,7 +26,8 @@ $(document).ready(function(){
 								'</div>');
 	});
 
-	$('.modal-content').append('<h1>HolaPeyita!</h1>');
+
+	$('.modal-content').append('<h1>Hola</h1>');
 
 
 

@@ -20271,7 +20271,7 @@ $(document).ready(function(){
 	photo.forEach(function(ele){
 		$('#contenedor').append('<div class="elemento">'+
 									'<div class="box">'+
-										'<img class="modal-trigger" src="assets/img/'+ele.image_url+'" alt="">'+
+										'<img src="assets/img/'+ele.image_url+'" alt="">'+
 										'<div class="caja">'+
 											'<h6>'+ele.title+'</h6>'+
 											'<p>'+ele.description+'</p>'+
@@ -20281,7 +20281,8 @@ $(document).ready(function(){
 								'</div>');
 	});
 
-	$('.modal-content').append('<h1>HolaPeyita!</h1>');
+
+	$('.modal-content').append('<h1>Hola</h1>');
 
 
 
